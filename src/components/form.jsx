@@ -9,6 +9,11 @@ export const Form = () => {
   const [content, setContent] = useState("");
 
   async function handleCreateData() {
+    if (title.trim() === "" || content.trim() === "") {
+      alert("Both fields are required");
+      return;
+    }
+
     await fetch("https://v1.appbackend.io/v1/rows/F07f9bj18V00", {
       method: "POST",
       headers: {
