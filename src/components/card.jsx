@@ -23,7 +23,7 @@ export const Card = ({ item }) => {
     <div className="mt-1 mb-1">
       <div
         key={item.id}
-        className="p-4 bg-white border-black rounded border-2 mb-3"
+        className="p-4 bg-white border-black rounded border-2 mb-3 hover:bg-slate-200 hover:border-zinc-500"
       >
         <p className="text-l font-bold mt-2 text-black mb-1">{formattedDate}</p>
         <p className="text-2xl font-bold text-black">{item.title}</p>

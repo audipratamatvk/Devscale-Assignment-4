@@ -9,9 +9,11 @@ export default async function Home() {
   console.log(data);
 
   return (
-    <div className="bg- h-screen font-custom">
-      <section className="mt-4 mb-4">
-        <div className="text-center text-2xl font-bold mb-2">MY JOURNAL</div>
+    <div className="font-custom bg-gradient-to-b from-gray-400 to-gray-200">
+      <section className="">
+        <div className="text-center text-2xl font-bold mb-2 pt-4">
+          MY JOURNAL
+        </div>
         <Form />
       </section>
 
